@@ -1,1 +1,3 @@
-# geekbang_springDemo
+# Spring 编程常见错误 50 例配套代码
+
+包含spring框架下的50种常见问题
