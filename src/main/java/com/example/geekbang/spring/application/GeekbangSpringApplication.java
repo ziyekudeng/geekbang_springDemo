@@ -6,7 +6,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("com.example.geekbang.spring.example*")
+@ComponentScan("com.example.geekbang.spring.class*.*")
 public class GeekbangSpringApplication {
 
     public static void main(String[] args) {
