@@ -16,11 +16,11 @@ import java.util.List;
 
 @RestController
 @Slf4j
-public class Example7StudentController {
+public class C3E2StudentController {
 
     private List<Student> students;
 
-    public Example7StudentController(List<Student> students){
+    public C3E2StudentController(List<Student> students){
         this.students = students;
     }
 

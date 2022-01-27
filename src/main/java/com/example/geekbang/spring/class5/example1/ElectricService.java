@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ElectricService {
     //@Autowired
+    //@Lazy
     //private ElectricService electricService;
 
     public void charge() throws Exception {

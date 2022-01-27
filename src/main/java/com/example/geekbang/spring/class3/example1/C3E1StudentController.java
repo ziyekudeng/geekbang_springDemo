@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @Slf4j
-public class Example6StudentController {
+public class C3E1StudentController {
 
     //@Value("#{student}")
     //private Student student;

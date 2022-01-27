@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @Slf4j
-public class Example5StudentController {
+public class C2E2StudentController {
     /*
      *问题情况：
      */
@@ -25,15 +25,15 @@ public class Example5StudentController {
      *修正方式：使用类名.注入类名（首字母小写）
      */
     @Autowired
-    @Qualifier("example5StudentController.InnerClassDataService")
-    Example5DataService innerClassDataService;
+    @Qualifier("c2E2StudentController.InnerClassDataService")
+    C2E2DataService innerClassDataService;
 
     @Repository
-    public static class InnerClassDataService implements Example5DataService {
+    public static class InnerClassDataService implements C2E2DataService {
         @Override
         public void deleteStudent(int id) {
             //空实现
-            log.info("代码执行到这里了：Example5StudentController.InnerClassDataService");
+            log.info("代码执行到这里了：C2E2StudentController.InnerClassDataService");
         }
     }
     //省略其他非关键代码
