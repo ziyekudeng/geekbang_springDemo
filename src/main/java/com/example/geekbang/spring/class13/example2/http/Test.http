@@ -1,0 +1,17 @@
+
+### 案例 2：Filter 中不小心多次执行 doFilter()
+### 情况1
+POST http://localhost:8080/c13/e2/regStudent/张三
+Content-Type: application/json
+
+
+{
+  "name": "",
+  "age": 10,
+  "phone": {"number":"12306"}
+}
+
+
+
+
+

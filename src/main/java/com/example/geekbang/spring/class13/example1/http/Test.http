@@ -1,0 +1,17 @@
+
+### 案例 1：@WebFilter 过滤器无法被自动注入
+### 情况1
+POST http://localhost:8080/c13/e1/regStudent/张三
+Content-Type: application/json
+
+
+{
+  "name": "",
+  "age": 10,
+  "phone": {"number":"12306"}
+}
+
+
+
+
+
