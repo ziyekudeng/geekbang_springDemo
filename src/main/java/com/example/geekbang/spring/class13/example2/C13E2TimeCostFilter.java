@@ -1,8 +1,7 @@
 package com.example.geekbang.spring.class13.example2;
 
-import org.springframework.stereotype.Component;
-
 import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
 /**
@@ -12,7 +11,8 @@ import java.io.IOException;
  * @create: 2022-02-07 11:49
  */
 
-@Component
+//@Component
+@WebFilter(urlPatterns = { "/c13/e2/*" })
 public class C13E2TimeCostFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
