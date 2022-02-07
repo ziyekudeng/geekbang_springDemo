@@ -21,7 +21,11 @@ public class C13E2TimeCostFilter implements Filter {
             System.out.println("Filter 处理中时发生异常");
             throw new RuntimeException();
         } catch (Exception e) {
-            chain.doFilter(request, response);
+            e.printStackTrace();
+            /*
+             *修正方式： 不管怎么调用过滤器，不能多次调用
+             */
+          //  chain.doFilter(request, response);
         }
         chain.doFilter(request, response);
     }
