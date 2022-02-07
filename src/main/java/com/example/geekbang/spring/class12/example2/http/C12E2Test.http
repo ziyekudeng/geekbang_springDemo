@@ -1,0 +1,17 @@
+
+### 案例 2：嵌套校验失效
+POST http://localhost:8080/c12/e2/students
+Content-Type: application/json
+
+{
+  "name": "this_is_my_name_which_is_too_long",
+  "age": 10,
+  "phone": {
+    "number": "12306123061230612306"
+  }
+}
+
+
+
+
+

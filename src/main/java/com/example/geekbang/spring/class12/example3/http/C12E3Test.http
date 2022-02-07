@@ -1,0 +1,29 @@
+
+### 案例 3：误解校验执行
+### 情况1
+POST http://localhost:8080/c12/e3/students
+Content-Type: application/json
+
+
+{
+  "name": "",
+  "age": 10,
+  "phone": {"number":"12306"}
+}
+
+### 情况2
+POST http://localhost:8080/c12/e3/students
+Content-Type: application/json
+
+
+
+{
+  "age": 10,
+  "phone": {"number":"12306"}
+}
+
+
+
+
+
+

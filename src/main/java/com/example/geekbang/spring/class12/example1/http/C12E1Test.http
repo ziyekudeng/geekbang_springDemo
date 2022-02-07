@@ -1,0 +1,39 @@
+
+### 案例 1：对象参数校验失效情况复现
+POST http://localhost:8080/c12/e1/students
+Content-Type: application/json
+
+{
+  "name": "this_is_my_name_which_is_too_long",
+  "age": 10
+}
+
+### 修正方式一
+POST http://localhost:8080/c12/e1/students/1
+Content-Type: application/json
+
+{
+  "name": "this_is_my_name_which_is_too_long",
+  "age": 10
+}
+
+### 修正方式二
+POST http://localhost:8080/c12/e1/students/2
+Content-Type: application/json
+
+{
+  "name": "this_is_my_name_which_is_too_long",
+  "age": 10
+}
+
+### 修正方式三
+POST http://localhost:8080/c12/e1/students/3
+Content-Type: application/json
+
+{
+  "name": "this_is_my_name_which_is_too_long",
+  "age": 10
+}
+
+
+
