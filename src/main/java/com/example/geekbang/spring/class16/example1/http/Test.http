@@ -1,0 +1,16 @@
+
+### 案例 1：小心过滤器异常
+POST http://localhost:8080/c16/e1/regStudent/张三
+Content-Type: application/json
+
+
+{
+  "name": "",
+  "age": 10,
+  "phone": {"number":"12306"}
+}
+
+
+
+
+

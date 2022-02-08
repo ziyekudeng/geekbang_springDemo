@@ -8,12 +8,12 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
+
 @SpringBootApplication
 @ComponentScan("com.example.geekbang.spring.class*.*")
 @EnableAspectJAutoProxy(exposeProxy = true)
 @ServletComponentScan("com.example.geekbang.spring.class*.*")
 @Slf4j
-//Class 15
 public class GeekbangSpringApplication {
 
     public static void main(String[] args) {
