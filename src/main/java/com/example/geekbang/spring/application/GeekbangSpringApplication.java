@@ -8,13 +8,25 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
-
 @SpringBootApplication
 @ComponentScan("com.example.geekbang.spring.class*.*")
 @EnableAspectJAutoProxy(exposeProxy = true)
 @ServletComponentScan("com.example.geekbang.spring.class*.*")
 @Slf4j
 public class GeekbangSpringApplication {
+    /**
+     * Class 18
+     * @param redisTemplate
+     * @param stringRedisTemplate
+     */
+    //void SpringdataApplication(RedisTemplate redisTemplate, StringRedisTemplate stringRedisTemplate) {
+    //    String key = "mykey";
+    //    stringRedisTemplate.opsForValue().set(key, "myvalue");
+    //    Object valueGotFromStringRedisTemplate = stringRedisTemplate.opsForValue().get(key);
+    //    System.out.println(valueGotFromStringRedisTemplate);
+    //    Object valueGotFromRedisTemplate = redisTemplate.opsForValue().get(key);
+    //    System.out.println(valueGotFromRedisTemplate);
+    //}
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(GeekbangSpringApplication.class, args);
