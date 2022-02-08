@@ -1,0 +1,4 @@
+GET http://localhost:8080/c9/e5/hi2?name=xiaoming&name=hanmeimei
+Accept: application/json
+
+###
