@@ -1,4 +1,4 @@
-package com.example.geekbang.spring.class19.example2;
+package com.example.geekbang.spring.class20.example1;
 
 import com.example.geekbang.spring.class19.C19JdbcConfig;
 import org.mybatis.spring.annotation.MapperScan;
@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan
 @Import({C19JdbcConfig.class})
 @PropertySource("classpath:jdbc.properties")
-@MapperScan("com.example.geekbang.spring.class19.*")
+@MapperScan("com.example.geekbang.spring.class20.*")
 @EnableTransactionManagement
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
 @EnableAspectJAutoProxy(proxyTargetClass = true, exposeProxy = true)
@@ -27,9 +27,9 @@ public class AppConfig {
     public static void main(String[] args) throws Exception {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         /*
-         *Class 19 example2
+         *Class 20 example1
          */
-        C19E2StudentService studentService = (C19E2StudentService) context.getBean("c19E2StudentService");
+        C20E1StudentService studentService = ( C20E1StudentService) context.getBean("c20E1StudentService");
         studentService.saveStudent("小明");
     }
 }

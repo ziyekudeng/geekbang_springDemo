@@ -16,7 +16,7 @@ import javax.sql.DataSource;
  * @create: 2022-02-09 11:45
  */
 
-public class JdbcConfig {
+public class C19JdbcConfig {
     @Value("${jdbc.driver}")
     private String driver;
 

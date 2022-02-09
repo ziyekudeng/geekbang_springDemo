@@ -1,6 +1,6 @@
 package com.example.geekbang.spring.class19.example1;
 
-import com.example.geekbang.spring.class19.JdbcConfig;
+import com.example.geekbang.spring.class19.C19JdbcConfig;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @ComponentScan
-@Import({JdbcConfig.class})
+@Import({C19JdbcConfig.class})
 @PropertySource("classpath:jdbc.properties")
 @MapperScan("com.example.geekbang.spring.class19.*")
 @EnableTransactionManagement
@@ -27,7 +27,7 @@ public class AppConfig {
     public static void main(String[] args) throws Exception {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         /*
-         *Class 19
+         *Class 19 example1
          */
         C19E1StudentService studentService = (C19E1StudentService) context.getBean("c19E1StudentService");
         studentService.saveStudent("小明");

@@ -1,6 +1,6 @@
-package com.example.geekbang.spring.class19.example2;
+package com.example.geekbang.spring.class20.example2;
 
-import com.example.geekbang.spring.class19.C19JdbcConfig;
+import com.example.geekbang.spring.class20.example2.dbcontrol.C20JdbcConfig;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -17,9 +17,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @ComponentScan
-@Import({C19JdbcConfig.class})
+@Import({C20JdbcConfig.class})
 @PropertySource("classpath:jdbc.properties")
-@MapperScan("com.example.geekbang.spring.class19.*")
+@MapperScan("com.example.geekbang.spring.class20.*")
 @EnableTransactionManagement
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
 @EnableAspectJAutoProxy(proxyTargetClass = true, exposeProxy = true)
@@ -27,9 +27,9 @@ public class AppConfig {
     public static void main(String[] args) throws Exception {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         /*
-         *Class 19 example2
+         *Class 20 example2
          */
-        C19E2StudentService studentService = (C19E2StudentService) context.getBean("c19E2StudentService");
+        C20E2StudentService studentService = ( C20E2StudentService) context.getBean("c20E2StudentService");
         studentService.saveStudent("小明");
     }
 }
